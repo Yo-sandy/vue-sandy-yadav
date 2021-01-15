@@ -1,15 +1,23 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <FluidNavigation/>
+  <ListRendring/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import FluidNavigation from "./components/FluidNavigation.vue";
+import ListRendring from "./components/ListRendring.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FluidNavigation,
+    ListRendring
   }
 }
 </script>
+
+<style scoped>
+  img{
+    width: 300px;
+  }
+</style>
