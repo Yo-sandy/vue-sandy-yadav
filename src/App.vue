@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <FluidNavigation/>
-  <ListRendring/>
+  <FormInputBindings/>
 </template>
 
 <script>
 import FluidNavigation from "./components/FluidNavigation.vue";
-import ListRendring from "./components/ListRendring.vue";
+import FormInputBindings from "./components/FormInputBindings.vue";
 export default {
   name: 'App',
   components: {
     FluidNavigation,
-    ListRendring
+    FormInputBindings
   }
 }
 </script>
