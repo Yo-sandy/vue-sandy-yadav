@@ -1,18 +1,24 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <FluidNavigation/>
-  <FormInputBindings/>
+  <StyleComponents/>
+  <SlotComponents/>
+  <DynamicComponents/>
 </template>
 
 <script>
 import FluidNavigation from "./components/FluidNavigation.vue";
-import FormInputBindings from "./components/FormInputBindings.vue";
+import  StyleComponents from "./components/StyleComponents.vue";
+import  SlotComponents from "./components/SlotComponents.vue";
+import DynamicComponents from "./components/DynamicComponents.vue";
 export default {
   name: 'App',
   components: {
     FluidNavigation,
-    FormInputBindings
-  }
+    StyleComponents,
+    SlotComponents,
+    DynamicComponents
+  },
 }
 </script>
 
