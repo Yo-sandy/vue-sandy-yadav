@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-4 mb-2">
     <div class="card" style="width: 18rem">
-      <div class="card-body">
+      <div class="card-body" v-bind="$attrs">
         <h5 class="card-title">{{ title }}</h5>
         <p class="card-text">{{ item.description }}</p>
         <a :href="item.link" class="card-link">{{ item.link_title }}</a><br/>
@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  inheritAttrs: true,
   props:  {
     item:{
       type: Object,
